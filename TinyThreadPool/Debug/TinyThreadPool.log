@@ -1,0 +1,275 @@
+﻿  Source.cpp
+E:\C++Code\code\Frame\TinyThreadPool\TinyThreadPool\Source.cpp(9,10): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+E:\C++Code\code\Frame\TinyThreadPool\TinyThreadPool\Source.cpp(15,9): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+E:\C++Code\code\Frame\TinyThreadPool\TinyThreadPool\ThreadPool.h(26,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\C++Code\code\Frame\TinyThreadPool\TinyThreadPool\Source.cpp(31): message : see reference to function template instantiation 'std::future<int> ThreadPool::AddTask<int(__cdecl &)(float,const char *),int,const char(&)[7]>(Fn,int &&,const char (&)[7])' being compiled
+          with
+          [
+              Fn=int (__cdecl &)(float,const char *)
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\type_traits(1601,77): warning C4244: 'argument': conversion from '_Cv_TiD' to 'float', possible loss of data
+          with
+          [
+              _Cv_TiD=int
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(762): message : see reference to function template instantiation 'int std::invoke<_Cv_FD&,_Cv_TiD&,int&,const char*&>(_Callable,_Ty1,int &,const char *&) noexcept(false)' being compiled
+          with
+          [
+              _Cv_FD=int (__thiscall obj::* )(float,const char *),
+              _Cv_TiD=obj *,
+              _Callable=int (__thiscall obj::* &)(float,const char *),
+              _Ty1=obj *&
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1412): message : see reference to function template instantiation 'int std::_Invoker_ret<std::_Unforced,false>::_Call<_Cv_FD&,_Cv_TiD&,int&,const char*&>(_Fx,_Cv_TiD &,int &,const char *&) noexcept(false)' being compiled
+          with
+          [
+              _Cv_FD=int (__thiscall obj::* )(float,const char *),
+              _Cv_TiD=obj *,
+              _Fx=int (__thiscall obj::* &)(float,const char *)
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1451): message : see reference to function template instantiation 'int std::_Call_binder<std::_Unforced,0,1,2,_Ty1,_Ty2,std::tuple<>>(std::_Invoker_ret<std::_Unforced,false>,std::integer_sequence<size_t,0,1,2>,_Cv_FD &,_Cv_tuple_TiD &,_Untuple &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty1=int (__thiscall obj::* )(float,const char *),
+              _Ty2=std::tuple<obj *,int,const char *>,
+              _Cv_FD=int (__thiscall obj::* )(float,const char *),
+              _Cv_tuple_TiD=std::tuple<obj *,int,const char *>,
+              _Untuple=std::tuple<>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\type_traits(1585): message : see reference to function template instantiation 'int std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>::operator ()<>(void) noexcept(false)' being compiled
+          with
+          [
+              Fn=int (__thiscall obj::* )(float,const char *)
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\type_traits(1585): message : see reference to function template instantiation 'int std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>::operator ()<>(void) noexcept(false)' being compiled
+          with
+          [
+              Fn=int (__thiscall obj::* )(float,const char *)
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(743): message : see reference to function template instantiation 'int std::invoke<_Callable&>(std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>&) noexcept(false)' being compiled
+          with
+          [
+              _Callable=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]>,
+              Fn=int (__thiscall obj::* )(float,const char *)
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(919): message : see reference to function template instantiation 'void std::_Invoker_ret<_Rx,true>::_Call<_Callable&,>(_Fx) noexcept(false)' being compiled
+          with
+          [
+              _Rx=void,
+              _Callable=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]>,
+              _Fx=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]> &
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(920): message : see reference to function template instantiation 'void std::_Invoker_ret<_Rx,true>::_Call<_Callable&,>(_Fx) noexcept(false)' being compiled
+          with
+          [
+              _Rx=void,
+              _Callable=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]>,
+              _Fx=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]> &
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(919): message : while compiling class template member function '_Rx std::_Func_impl_no_alloc<std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>,_Rx>::_Do_call(void)'
+          with
+          [
+              _Rx=void,
+              Fn=int (__thiscall obj::* )(float,const char *)
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(813): message : see reference to class template instantiation 'std::_Func_impl_no_alloc<std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>,_Ret>' being compiled
+          with
+          [
+              Fn=int (__thiscall obj::* )(float,const char *),
+              _Ret=void
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1010): message : see reference to variable template 'const bool _Is_large<std::_Func_impl_no_alloc<std::_Binder<std::_Unforced,int (__thiscall obj::*&)(float,char const *),obj * &,int &,char const (&)[7]>,void> >' being compiled
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1143): message : see reference to function template instantiation 'void std::_Func_class<_Ret>::_Reset<std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>>(_Fx &&)' being compiled
+          with
+          [
+              _Ret=void,
+              Fn=int (__thiscall obj::* )(float,const char *),
+              _Fx=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1143): message : see reference to function template instantiation 'void std::_Func_class<_Ret>::_Reset<std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>>(_Fx &&)' being compiled
+          with
+          [
+              _Ret=void,
+              Fn=int (__thiscall obj::* )(float,const char *),
+              _Fx=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1198): message : see reference to function template instantiation 'std::function<void (void)>::function<std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>,0>(_Fx)' being compiled
+          with
+          [
+              Fn=int (__thiscall obj::* )(float,const char *),
+              _Fx=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1198): message : see reference to function template instantiation 'std::function<void (void)>::function<std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>,0>(_Fx)' being compiled
+          with
+          [
+              Fn=int (__thiscall obj::* )(float,const char *),
+              _Fx=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]>
+          ]
+E:\C++Code\code\Frame\TinyThreadPool\TinyThreadPool\Task.h(16): message : see reference to function template instantiation 'std::function<void (void)> &std::function<void (void)>::operator =<std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>,0>(_Fx &&)' being compiled
+          with
+          [
+              Fn=int (__thiscall obj::* )(float,const char *),
+              _Fx=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]>
+          ]
+E:\C++Code\code\Frame\TinyThreadPool\TinyThreadPool\Task.h(17): message : see reference to function template instantiation 'std::function<void (void)> &std::function<void (void)>::operator =<std::_Binder<std::_Unforced,Fn &,obj *&,int &,const char (&)[7]>,0>(_Fx &&)' being compiled
+          with
+          [
+              Fn=int (__thiscall obj::* )(float,const char *),
+              _Fx=std::_Binder<std::_Unforced,int (__thiscall obj::* &)(float,const char *),obj *&,int &,const char (&)[7]>
+          ]
+E:\C++Code\code\Frame\TinyThreadPool\TinyThreadPool\Source.cpp(22): message : see reference to function template instantiation 'void Task::Bind<int(__thiscall obj::* )(float,const char *),obj*,int,const char(&)[7]>(Fn &&,obj *&&,int &&,const char (&)[7])' being compiled
+          with
+          [
+              Fn=int (__thiscall obj::* )(float,const char *)
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\type_traits(1595,67): warning C4244: 'argument': conversion from '_Cv_TiD' to 'float', possible loss of data
+          with
+          [
+              _Cv_TiD=int
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(762): message : see reference to function template instantiation 'int std::invoke<int(__cdecl *&)(float,const char *),_Cv_TiD&,const char*&>(_Callable,_Ty1,const char *&) noexcept(false)' being compiled
+          with
+          [
+              _Cv_TiD=int,
+              _Callable=int (__cdecl *&)(float,const char *),
+              _Ty1=int &
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1412): message : see reference to function template instantiation 'int std::_Invoker_ret<std::_Unforced,false>::_Call<int(__cdecl *&)(float,const char *),_Cv_TiD&,const char*&>(_Fx,_Cv_TiD &,const char *&) noexcept(false)' being compiled
+          with
+          [
+              _Cv_TiD=int,
+              _Fx=int (__cdecl *&)(float,const char *)
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1451): message : see reference to function template instantiation 'int std::_Call_binder<std::_Unforced,0,1,int(__cdecl *)(float,const char *),_Ty2,std::tuple<>>(std::_Invoker_ret<std::_Unforced,false>,std::integer_sequence<size_t,0,1>,_Cv_FD &,_Cv_tuple_TiD &,_Untuple &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty2=std::tuple<int,const char *>,
+              _Cv_FD=int (__cdecl *)(float,const char *),
+              _Cv_tuple_TiD=std::tuple<int,const char *>,
+              _Untuple=std::tuple<>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\type_traits(1585): message : see reference to function template instantiation 'int std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),_Ty,const char (&)[7]>::operator ()<>(void) noexcept(false)' being compiled
+          with
+          [
+              _Ty=int
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\type_traits(1585): message : see reference to function template instantiation 'int std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),_Ty,const char (&)[7]>::operator ()<>(void) noexcept(false)' being compiled
+          with
+          [
+              _Ty=int
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(752): message : see reference to function template instantiation 'int std::invoke<_Callable&>(std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),_Ty,const char (&)[7]>&) noexcept(false)' being compiled
+          with
+          [
+              _Callable=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>,
+              _Ty=int
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(919): message : see reference to function template instantiation '_Rx std::_Invoker_ret<_Rx,false>::_Call<_Callable&,>(_Fx) noexcept(false)' being compiled
+          with
+          [
+              _Rx=ResType,
+              _Callable=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>,
+              _Fx=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]> &
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(920): message : see reference to function template instantiation '_Rx std::_Invoker_ret<_Rx,false>::_Call<_Callable&,>(_Fx) noexcept(false)' being compiled
+          with
+          [
+              _Rx=ResType,
+              _Callable=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>,
+              _Fx=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]> &
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(919): message : while compiling class template member function '_Rx std::_Func_impl_no_alloc<std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),_Ty,const char (&)[7]>,_Rx>::_Do_call(void)'
+          with
+          [
+              _Rx=ResType,
+              _Ty=int
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(813): message : see reference to class template instantiation 'std::_Func_impl_no_alloc<std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),_Ty,const char (&)[7]>,_Ret>' being compiled
+          with
+          [
+              _Ty=int,
+              _Ret=ResType
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1010): message : see reference to variable template 'const bool _Is_large<std::_Func_impl_no_alloc<std::_Binder<std::_Unforced,int (__cdecl&)(float,char const *),int,char const (&)[7]>,int> >' being compiled
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1143): message : see reference to function template instantiation 'void std::_Func_class<_Ret>::_Reset<std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),_Ty,const char (&)[7]>>(_Fx &&)' being compiled
+          with
+          [
+              _Ret=ResType,
+              _Ty=int,
+              _Fx=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\functional(1143): message : see reference to function template instantiation 'void std::_Func_class<_Ret>::_Reset<std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),_Ty,const char (&)[7]>>(_Fx &&)' being compiled
+          with
+          [
+              _Ret=ResType,
+              _Ty=int,
+              _Fx=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\future(475): message : see reference to function template instantiation 'std::function<_Ret (void)>::function<_Ty,0>(_Fx)' being compiled
+          with
+          [
+              _Ret=ResType,
+              _Ty=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>,
+              _Fx=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\future(475): message : see reference to function template instantiation 'std::function<_Ret (void)>::function<_Ty,0>(_Fx)' being compiled
+          with
+          [
+              _Ret=ResType,
+              _Ty=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>,
+              _Fx=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\future(1360): message : see reference to function template instantiation 'std::_Packaged_state<_Ret (void)>::_Packaged_state<_Ty>(_Fty2 &&)' being compiled
+          with
+          [
+              _Ret=ResType,
+              _Ty=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>,
+              _Fty2=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\future(1360): message : see reference to function template instantiation 'std::_Packaged_state<_Ret (void)>::_Packaged_state<_Ty>(_Fty2 &&)' being compiled
+          with
+          [
+              _Ret=ResType,
+              _Ty=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>,
+              _Fty2=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\xutility(151): message : see reference to function template instantiation 'std::packaged_task<ResType (void)>::packaged_task<_Ty,0>(_Fty2 &&)' being compiled
+          with
+          [
+              _Ty=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>,
+              _Fty2=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\xutility(158): message : see reference to function template instantiation 'std::packaged_task<ResType (void)>::packaged_task<_Ty,0>(_Fty2 &&)' being compiled
+          with
+          [
+              _Ty=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>,
+              _Fty2=std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\memory(2021): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>>(_Ty &,std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]> &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty=std::packaged_task<ResType (void)>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\memory(2747): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>>(std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]> &&)' being compiled
+          with
+          [
+              _Ty=std::packaged_task<ResType (void)>
+          ]
+D:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.29.30133\include\memory(2748): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]>>(std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),int,const char (&)[7]> &&)' being compiled
+          with
+          [
+              _Ty=std::packaged_task<ResType (void)>
+          ]
+E:\C++Code\code\Frame\TinyThreadPool\TinyThreadPool\ThreadPool.h(25): message : see reference to function template instantiation 'std::shared_ptr<std::packaged_task<ResType (void)>> std::make_shared<std::packaged_task<ResType (void)>,std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),_Ty,const char (&)[7]>>(std::_Binder<std::_Unforced,int (__cdecl &)(float,const char *),_Ty,const char (&)[7]> &&)' being compiled
+          with
+          [
+              _Ty=int
+          ]
+E:\C++Code\code\Frame\TinyThreadPool\TinyThreadPool\Source.cpp(31): message : see reference to function template instantiation 'std::future<int> ThreadPool::AddTask<int(__cdecl &)(float,const char *),int,const char(&)[7]>(Fn,int &&,const char (&)[7])' being compiled
+          with
+          [
+              Fn=int (__cdecl &)(float,const char *)
+          ]
+  ThreadPool.cpp
+  Generating Code...
+  TinyThreadPool.vcxproj -> E:\C++Code\code\Frame\TinyThreadPool\Debug\TinyThreadPool.exe
